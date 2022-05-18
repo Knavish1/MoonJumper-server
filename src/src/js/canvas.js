@@ -1,3 +1,5 @@
+//Used json files from https://chriscourses.com/mario-game-course
+
 import platform from '../img/platform4.png'
 import sky  from '../img/sky.png'
 import hills from '../img/hills.png'
@@ -203,7 +205,7 @@ function animate() {
    //ends game after certain reach
     endMarker.forEach((ender) => {
         if (player.position.y + player.height <= ender.position.y && player.position.y + player.height + player.velocity.y >= ender.position.y && player.position.x + player.width >= ender.position.x && player.position.x <= ender.position.x + platform.width){
-            alert(Finished+ '(jumpcount)')
+            alert(Finished+ "jumpcount")
     }
 })
 // how to win
